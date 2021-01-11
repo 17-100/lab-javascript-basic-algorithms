@@ -41,6 +41,19 @@ for(y=hacker2.length-1; y >= null; y--) {
 
 console.log(stringName2)
 
+//3.3
+//3.3
+const arrayNames = [hacker1, hacker2];
+arrayNames.sort();
+console.log(arrayNames);
+
+if(arrayNames[0] == "Oezge" && arrayNames[1] == "Oriane") {
+  console.log(`The driver's name goes first.`)
+} else if (arrayNames[0] == "Oriane" && arrayNames[1] == "Oezge") {
+  console.log(`Yo, the navigator goes first definitely.`)
+} else if (arrayNames[0] === arrayNames[1] ) {
+  console.log(`What?! You both have the same name?`)
+}
 
 
 
