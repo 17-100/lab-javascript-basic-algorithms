@@ -22,6 +22,8 @@ if (hacker1.length > hacker2.length) {
   }
 
 // Iteration 3: Loops
+
+//3.1
 let i=0;
 let stringName = ''
 for(i=0; i< hacker1.length; i++) {
@@ -29,3 +31,12 @@ for(i=0; i< hacker1.length; i++) {
   }
 
 console.log(stringName.toUpperCase())
+
+//3.2
+let y;
+let stringName2 = ''
+for(y=hacker1.length; y >= 0; y--) {
+  stringName2 = stringName2 + hacker2[y]
+  }
+
+console.log(stringName2)
