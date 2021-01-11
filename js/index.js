@@ -35,7 +35,7 @@ console.log(stringName.toUpperCase())
 //3.2
 let y;
 let stringName2 = ''
-for(y=hacker1.length; y >= null; y--) {
+for(y=hacker2.length-1; y >= null; y--) {
   stringName2 = stringName2 + hacker2[y]
   }
 
