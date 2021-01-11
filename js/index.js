@@ -42,7 +42,6 @@ for(y=hacker2.length-1; y >= null; y--) {
 console.log(stringName2)
 
 //3.3
-//3.3
 const arrayNames = [hacker1, hacker2];
 arrayNames.sort();
 console.log(arrayNames);
