@@ -74,7 +74,7 @@ console.log(lexicographicOrder(hacker1, hacker2));
 
 
 
-// Bonus
+// Bonus 1
 
 var lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare elementum ullamcorper. Curabitur volutpat enim vitae sem euismod accumsan. Donec tempor at eros gravida maximus. Nulla interdum enim vitae erat accumsan vestibulum. Etiam tempor diam ac metus iaculis laoreet. Nulla dictum finibus urna, a porttitor felis. Fusce venenatis sapien vitae ex molestie, at pellentesque dui varius. Duis dignissim lorem luctus leo gravida posuere.
 
@@ -103,4 +103,37 @@ function numberOfSpecificWord(text, word) {
 console.log(numberOfSpecificWord(lorem, "et"));
 
 
+// Bonus 2
+var phrase = `Amor, Roma`
 
+
+function palindrome(input) {
+    // remove space between words
+    var str;
+    var firsthalf = "";
+    var secondhalf = "";
+    str = input.split(" ").join("").toLowerCase();
+    str2 = str.replace(/[^a-zA-Z ]/g, "");
+    str3 = str2.replace(/[?=]/g, "");
+    var halfLength = str3.length / 2;
+    
+    // first half of the input-string
+    for (var i = 0; i < halfLength; i++) {
+            firsthalf += str3[i];
+    }
+
+    // second half of the input-string
+    for(var y = str3.length -1; y >= halfLength; y--) {
+            secondhalf += str3[y];
+    }
+    
+
+    if (firsthalf == secondhalf) {
+        return `Sehr gut, es handelt sich bei deinem Satz um ein Palindrome!`
+    }
+    else {
+        return "Du scheinst ein lustiger Vogel zu sein. Wieso gibst du kein Palindrome ein, ulan!?"
+    }
+}
+
+console.log(palindrome(phrase));
